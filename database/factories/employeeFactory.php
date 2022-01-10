@@ -15,11 +15,11 @@ class employeeFactory extends Factory
     {
         
         return [
-            'name' =>$this->faker->name(),
-            'email'=>$this->faker->email(),
-            'adddress'=>$this->faker->address(),
-            'gender' =>$this->faker->randomElement(['male', 'female','other']),
-            'phone'=>$this->faker-> phoneNumber()
+            'name' =>$this->faker->name,
+            'email'=>$this->faker->email,
+            'address'=>$this->faker->address,
+            'gender' =>$this->faker->randomElement(['male', 'female','others']),
+            'phone'=>$this->faker-> phoneNumber
         ];
     }
 }
